@@ -1,0 +1,354 @@
+/* Reset default margin and padding */
+* {
+	margin: 0;
+	padding: 0;
+  }
+  
+  /* Style the navigation bar */
+  nav {
+	background-color: #ff0000;
+	color: #dfe3ee;
+  }
+  
+  .nav-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: #023047;
+	position: relative;
+	z-index: 2;
+  }
+  
+  .logo {
+	font-weight: bold;
+  }
+  
+  .nav-menu {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	text-align: center;
+  }
+  
+  .nav-menu li {
+	margin-right: 20px;
+  }
+  
+  .nav-menu li a {
+	color: #dfe3ee;
+	text-decoration: none;
+  }
+  
+  .burger {
+	display: none;
+	color: #dfe3ee;
+	font-size: 20px;
+	cursor: pointer;
+  }
+  
+  .line {
+	width: 24px;
+	height: 2px;
+	background-color: #dfe3ee;
+	margin-bottom: 4px;
+	transition: transform 0.3s ease;
+  }
+  
+  .burger.active .line:nth-child(1) {
+	transform: rotate(45deg) translate(3px, 3px);
+  }
+  
+  .burger.active .line:nth-child(2) {
+	opacity: 0;
+  }
+  
+  .burger.active .line:nth-child(3) {
+	transform: rotate(-45deg) translate(3px, -3px);
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+	.nav-menu {
+	  display: none;
+	  flex-direction: column;
+	  text-align: center;
+	}
+  
+	.nav-menu.active {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+  
+	.nav-menu.active li {
+	  margin-right: 0;
+	  margin-bottom: 10px;
+	}
+  
+	.burger {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-end;
+	}
+  
+	.burger.active .line:nth-child(1) {
+	  transform: rotate(45deg) translate(3px, 3px);
+	}
+  
+	.burger.active .line:nth-child(2) {
+	  opacity: 0;
+	}
+  
+	.burger.active .line:nth-child(3) {
+	  transform: rotate(-45deg) translate(3px, -3px);
+	}
+	
+	/* Adjust line lengths for symmetrical X */
+	.burger.active .line {
+	  width: 24px;
+	  height: 2px;
+	  background-color: #dfe3ee;
+	  margin-bottom: 3px;
+	  transition: transform 0.3s ease;
+	  transform-origin: center center;
+	}
+	
+	.burger.active .line:nth-child(1) {
+	  transform: rotate(45deg) translate(4px, 3px);
+	}
+	
+	.burger.active .line:nth-child(3) {
+	  transform: rotate(-45deg) translate(4px, -3px);
+	}
+  }
+
+  body {
+	background-color: #fff;
+	background-image: linear-gradient(to right, #b2d8ff 1px, transparent 1px),
+	  linear-gradient(to bottom, #b2d8ff 1px, transparent 1px);
+	background-size: 20px 20px;
+	background-position: calc(100%) calc(100%);
+	margin: 0;
+	padding: 0;
+  }
+
+
+
+
+
+
+
+
+  .polaroid-container {
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+  }
+  
+  .polaroid {
+	width: 300px; /* Default width */
+	padding: 20px;
+	background-color: #dfe3ee;
+	/*border-top: 10px solid #646fd4;*/
+	border-bottom: 10px solid #023047;
+	/*border-left: 10px solid #646fd4;*/
+	border-right: 10px solid #023047;
+	/*box-shadow: 10px 10px 10px #646fd4;*/
+	text-align: left;
+/* TEXT COLOUR */
+	color: #023047; 
+  }
+  
+  @media (max-width: 600px) {
+	.polaroid {
+	  width: 90%; /* Set a percentage width for mobile devices */
+	}
+  }
+  
+  @media (min-width: 601px) and (max-width: 1200px) {
+	.polaroid {
+	  width: 90%; /* Set a percentage width for tablets */
+	}
+  }
+  
+  @media (min-width: 1201px) {
+	.polaroid {
+	  width: 90%; /* Set a fixed width for desktops and larger screens */
+	}
+  }
+
+  .polaroid ul {
+	list-style-type: none;
+	padding-left: 1em;
+  }
+/* So my Text doesnt start under the Bullet point for the new line */
+  .polaroid ul li {
+	text-indent: -0.5em;
+  }
+/* Makes it Bold and INSTEAD OF A BULLET POINT ITS A "-" */
+  .polaroid ul li:before {
+	content: "-";
+	margin-right: 5px;
+	font-weight: bold;
+  }
+
+  
+  
+
+
+  
+  
+
+
+
+  .carousel-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 30px auto; /* Center horizontally and provide top and bottom margin */
+	width: 90%; /* Set the container width to 90% of the display */
+	overflow: hidden; /* Hide horizontal overflow */
+	position: relative; /* Add position relative */
+}
+
+.carousel {
+	display: flex;
+	flex-wrap: nowrap; /* Ensure the flexboxes stay in a single row */
+	align-items: flex-start; /* Align flex items at the top */
+	width: 100%; /* Set the carousel width to 100% */
+	border-bottom: 10px solid #023047; /* Add a bottom border */
+	border-right: 10px solid #023047; /* Add a right border */
+}
+
+.flexbox {
+	flex: 0 0 100%; /* Let the flexboxes shrink and grow as needed */
+	height: 400px; /* Set the height to match the polaroid height */
+	margin: 0px 0px; /* Adjust the margin as needed */
+	background-color: #dfe3ee;
+	text-align: center;
+	line-height: 90%; /* Adjust the line-height as needed */
+	font-size: 20px; /* Adjust the font-size as needed */
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* Center the content vertically */
+	align-items: center; /* Center the content horizontally */
+	width: 100%; /* Set the flexbox width to 100% */
+}
+
+  .arrow-btn {
+	position: absolute; /* Add position absolute */
+	top: 50%; /* Position the arrows vertically in the middle */
+	transform: translateY(-50%); /* Adjust the vertical alignment */
+	width: 40px;
+	height: 40px;
+	background-color: #023047;
+	color: #dfe3ee;
+	font-size: 24px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .prev-btn {
+	left: 0; /* Position the previous button to the left */
+	margin-left: 15px; /* Adjust the horizontal margin */
+  }
+  
+  .next-btn {
+	right: 0; /* Position the next button to the right */
+	margin-right: 15px; /* Adjust the horizontal margin */
+  }
+  
+  @media (max-width: 600px) {
+	.flexbox {
+	  width: 90%; /* Set a percentage width for mobile devices */
+	}
+  }
+  
+  @media (min-width: 601px) and (max-width: 1200px) {
+	.flexbox {
+	  width: 90%; /* Set a percentage width for tablets */
+	}
+  }
+  
+  @media (min-width: 1201px) {
+	.flexbox {
+	  width: 90%; /* Set a fixed width for desktops and larger screens */
+	}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .game-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+  }
+  
+  .game-board {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	gap: 10px;
+	width: 90%;
+	max-width: 90%;
+	margin: 0 auto; /* Center the game board horizontally */
+  }
+  
+  .game-square {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #023047;
+	font-size: 24px;
+	cursor: pointer;
+	color: #023047; /* Set the font color */
+	transition: background-color 0.3s ease;
+	flex: 1; /* Use flex: 1 to make the squares flexible boxes with equal width and height */
+  }
+  
+  
+  
+  .game-square.show {
+	background-color: #dfe3ee;
+  }
+  
+  .game-square.matched {
+	background-color: #00ff15;
+  }
+  

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Sedal Altun</div>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#why">Why</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#game">Game</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="polaroid-container" id="about">
+    <div class="polaroid">
+      <h1>Hi I'm Sedal Altun<br></h1><h2>but you can call me Sid.</h2><br><br>
+      <h3>About me - I'm always willing to;</h3><br>
+        <ul> 
+          <li><strong>Listen, Learn and Teach</strong> people from all walks of life - my favourite saying is <strong>"The Whole is Greater than the Sum of its Parts"</strong>. Being able to listen to other people's opinions and implementing their ideas could lead to a better end product, worst case it could allow us to <strong>approach a problem in a new way</strong> and hopefully give us a new sense of awareness for potential issues in the future.</li><br>
+          <li><strong>I love to get stuck in</strong> - be it with group projects or individual tasks. I'm not afraid to get my hands dirty or own up to any mistakes. <strong>I believe to Learn and Grow, you first need to be honest with yourself and others.</strong></li><br>
+          <li><strong>I love to try new things</strong> - it could be something as simple as trying new recipes and activities or going out of my comfort zone. <strong>These activities have allowed me to learn more about myself and my friends.</strong> </li><br>
+          <li><strong>I love friendly competition and a challenge</strong> regardless of how small it may seem, be it a game of Football or which team could finish a project to a higher standard. <strong>As long as it's kept within a friendly/healthy environment.</strong> </li><br>
+          <li>I'm <strong>creative in my approach to Problems-solving,</strong> but I'll touch up on this in the <strong>project section.</strong></li><br>
+        </ul>
+    </div>
+  </div>
+  
+
+
+  <div class="polaroid-container" id="why">
+    <div class="polaroid">
+      <h3>Why I want to get into Web development</h3><br>
+        <ul>      
+          <li>It's an <strong>interesting fast-paced environment</strong> where you will <strong>always have the opportunity to learn.</strong></li><br>
+          <li>I want to <strong>learn how websites work</strong> and what's needed to keep them <strong>running and engaging.</strong></li><br>
+          <li>How <strong>new tools</strong> change the landscape, <strong>where and when to implement</strong> them to give your website a competitive edge.</li><br>
+          <li>It's a <strong>great outlet for Creativity.</strong> For example, websites like Nike allow you to customise a pair of shoes and <strong>see how they look in real-time.</strong> 
+            I want to learn and make websites that will have a <strong>positive impact on people.</strong></li><br>
+          <li>How websites and their tools can be <strong>implemented by both Businesses and Individuals.</strong></li><br>
+        </ul>
+    </div>
+  </div>
+  
+
+
+  <div class="polaroid-container">
+    <div class="polaroid">
+      <h3>Why Founders and Coders</h3><br>
+        <p> 
+          Honestly just speaking with Dan, Sarah, Petra and everyone else at the meetups showed me that Founder and Coders <strong>genuinely care about the students and their learning.</strong><br><br>
+        <strong>That's the most important thing when looking for an environment to learn</strong>, I don't mind if there isn't an apprenticeship at the end of the course, since I believe it will still be the right step I need to start my career.
+        </p>
+    </div>
+  </div>
+
+
+
+  <div class="carousel-container" id="projects">
+    <button class="arrow-btn prev-btn" onclick="prevSlide()">&#10094;</button>
+    <div class="carousel">
+      <div class="flexbox">
+        <h3>Chat GPT</h3>
+        <div class="flexbox-content">
+          <br><br><br>
+          <p>This link will show how<br> I used Chat GPT to make this website</p>
+          <br><br><br>
+          <p><a href="https://chat.openai.com/share/815f4455-4003-4241-8d52-95877e6e5295" target="_blank">Click Here</a></p>
+        </div>
+      </div>
+      
+      <div class="flexbox">
+        <h3>Desk</h3>
+        <div class="flexbox-content">
+          <br><br>
+          <p>as promised here is an example of my 
+          <br>
+            Creativity and Problem-Solving.  
+          <br>
+          <br>
+          I needed a new desk and after looking 
+          <br>
+          online I thought to myself why don't 
+          <br>
+          I just make one myself? 
+          <br>
+          So I started to search online looking 
+          <br>
+          for ideas and materials. 
+          <br><br>
+          Once I felt I had a semi-solid idea
+          <br>
+          I asked my friend who works in 
+          <br>
+          construction. 
+          <br>
+          I then looked for the best deals and 
+          <br>
+          ordered the material.
+          <br>
+          While I was making the desk a came across a 
+          <br>
+          problem, I stopped and asked my friend why 
+          <br>
+          I was facing this problem and what 
+          <br>
+          I could do to solve it
+          </p>
+        </div>
+      </div>
+
+      <div class="flexbox">
+        <h3>Coding</h3>
+        <div class="flexbox-content">
+          <br><br>
+          I've completed several 
+          <br>
+          online projects from 
+          <br>
+          Codecademy to Couresera
+          <br>
+          & Google.
+          <br><br>
+          Fundamentals of Python 2/3 
+          <br>
+          (several projects with Python)
+          <br><br>
+          Google Digital Garage - 
+          <br>
+          Fundamentals of Digital Marketing
+          <br><br>
+          I've also made a Mobile Clicker Game.
+        </div>
+      </div>
+    </div>
+    <button class="arrow-btn next-btn" onclick="nextSlide()">&#10095;</button>
+  </div>
+
+
+
+  <div class="game-container" id="game">
+    <div class="game-board"></div>
+  </div>
+  
+
+
+  <div class="polaroid-container">
+    <div class="polaroid" id="contact">
+      <h3>Contact</h3>
+      <h4>
+        <br>
+        Email - work.sedal.altun@gmail.com
+        <br>
+        CodeWars -<a href="https://www.codewars.com/users/Sedal-A" target="_blank"> users/Sedal-A</a>
+        <br>
+        GitHub -<a href="https://github.com/Sedal-A" target="_blank"> Sedal-A</a>
+      </h4>
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script> 
+</body>
+</html>
